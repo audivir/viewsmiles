@@ -39,6 +39,11 @@ test
 # The molecule is displayed in the hover window if we hover "CCO" and also if we hover "test" (either on declaration or on usage)
 ```
 
+### 0.0.6
+
+first try to autocrop the SVG.
+
+
 To also access Literals and not just the 
 **Enjoy!**
 

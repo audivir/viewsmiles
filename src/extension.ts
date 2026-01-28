@@ -3,7 +3,7 @@ import * as smidrawer from 'smiles-drawer';
 import * as jsdom from 'jsdom';
 const NodeCache = require('node-cache');
 
-console.log("viewsmiles version 0.0.5");
+console.log("viewsmiles version 0.0.6");
 
 // debugTooLong: if true, we mark too long strings, but could lead to hover spam (e. g, large multiline strings)
 const debugTooLong = false;
@@ -200,6 +200,8 @@ export function deactivate() { }
 
 // assets
 // maybe we should move this to a separate file
+
+// errorMap: maps atom element texts to factors of their bounding box
 const errorMap = new Map<string, { width: number, height: number }>([
     ["C", { width: 0.1808000000000001, height: 0.23690289887472993 }],
     ["O", { width: 0.23197818119832958, height: 0.23739112478715807 }],
@@ -230,4 +232,3 @@ function limitedLog(key: string, message?: any, ...optionalParams: any[]) {
         console.log(message, ...optionalParams);
     }
 }
-
